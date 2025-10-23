@@ -6,9 +6,32 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("login Page"),
-       
+      body: Center(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Logo
+              Image.asset(
+                'gambar/logo.png',
+                height: 150,
+              ),
+              const SizedBox(height: 30),
+              
+              // LKS MART
+              const Text(
+                'LKS MART',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
+              const SizedBox(height: 30),
+            ],
+          ),
+        ),
       ),
     );
   }
