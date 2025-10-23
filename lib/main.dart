@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nama_projek_kamu/uts/daftar.dart';
+import 'package:nama_projek_kamu/uts/transaksi.dart';
 import 'uts/login.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const daftarPage(), //alamt login
+      home: const Transaksi(), //alamt login
     );
   }
 }

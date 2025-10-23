@@ -61,7 +61,8 @@ flutter:
   assets:
     - gambar/logo.png
     - gambar/gudang.png
-   
+    - gambar/001.jpg
+    - gambar/002.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
