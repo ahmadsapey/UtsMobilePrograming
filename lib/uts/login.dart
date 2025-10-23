@@ -54,7 +54,10 @@ class LoginPage extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+
+                    // transaksi
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     padding: const EdgeInsets.symmetric(vertical: 16),
@@ -75,10 +78,10 @@ class LoginPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) =>  daftar()),
+                      MaterialPageRoute(builder: (_) =>  daftarPage()),
                     );
                   },
-                  child: const Text('Belum punya akun? Daftar'),
+                  child: const Text('Acan punya akun? Klik didie'),
                 ),
               ),
             ],
