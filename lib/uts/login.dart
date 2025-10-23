@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nama_projek_kamu/uts/daftar.dart';
+import 'package:nama_projek_kamu/uts/transaksi.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -57,6 +58,10 @@ class LoginPage extends StatelessWidget {
                   onPressed: () {
 
                     // transaksi
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => Transaksi()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,

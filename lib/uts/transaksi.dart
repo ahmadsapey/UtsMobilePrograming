@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nama_projek_kamu/uts/login.dart';
 
 class Transaksi extends StatelessWidget {
   const Transaksi({super.key});
@@ -53,7 +54,7 @@ class Transaksi extends StatelessWidget {
                           Text(
                             'Es Kopi',
                             style: TextStyle(
-                              fontSize: 24, 
+                              fontSize: 24,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -95,7 +96,21 @@ class Transaksi extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height:12),
+              const SizedBox(height: 12),
+
+              // ;ogout
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => LoginPage()),
+                    );
+                  },
+                  child: const Text('Batal and logout'),
+                ),
+              ),
             ],
           ),
         ),
